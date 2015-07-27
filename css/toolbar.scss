@@ -1,0 +1,65 @@
+$toolbar-size:52px;
+.toolbar{
+    position:fixed;                      //固定定位
+    left:50%;                            //居中
+    bottom:5px;
+    margin-left:-$toolbar-size / 2;      //正确居中
+}
+
+.toolbar-item{
+    position:relative;
+    display: block;                     //转换为块元素 
+    width:$toolbar-size;                
+    height:$toolbar-size;
+    margin-top:1px;                     //上部外边距
+    
+    &:hover{
+        .toolbar-icon{
+            top:-$toolbar-size;                 //隐藏图标字体
+        }
+        
+        .toolbar-text{
+            top:0;                              //top可见  
+        }
+    }
+}
+
+.toolbar-btn{
+    position:absolute;
+    left:0;
+    top:0;
+    width:$toolbar-size;
+    height:$toolbar-size;
+    overflow:hidden;                    //溢出隐藏
+}
+
+.toolbar-icon{
+    position:absolute;
+    left:0;
+    top:0;
+    width:$toolbar-size;
+    height:$toolbar-size;
+    background-color: #d0d6d9;
+    font-size:30px;
+    color:#fff;
+    text-align: center;                          
+    line-height: $toolbar-size;
+    @include transition(top 0.6s);
+}
+
+.toolbar-text{
+    position:absolute;
+    left:0;
+    top:$toolbar-size;
+    width:$toolbar-size;
+    height:$toolbar-size;
+    background-color: #98a1a6;
+    padding-top:12px;
+    font-size:12px;
+    font-family: "courier new", "times new roman", arial;
+    font-weight: bold;
+    color:#fff;
+    text-align: center;                          
+    line-height: 1.2;
+    @include transition(top 0.6s);
+}

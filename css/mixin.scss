@@ -1,0 +1,7 @@
+@mixin transition($transition){       //添加不同的浏览器前缀
+    -webkit-transition:$transition;
+    -moz-transition:$transition;
+    -ms-transition:$transition;
+    -o-transition:$transition;
+    transition:$transition;
+}

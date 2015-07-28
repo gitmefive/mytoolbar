@@ -1,5 +1,5 @@
 # mytoolbar
-Wow,this is my first formal project posted on github,I'm a newcomer in Font-end engineering,
+Wow,this is my first formal project posted on github,I'm a newcomer in Front-end engineering,
 I'm inexperienced,but also invite more attention,lol.
 
 ## about this project
